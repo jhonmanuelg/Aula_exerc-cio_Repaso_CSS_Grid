@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgrey;
+}
+/* 
+Repaso CSS Grid */
+
+.box{
+    background: darkseagreen;
+    border: 2px solid aqua;
+    padding: 10px;
+}
+/* 1fr 1fr 1fr 0  en 20% 20% 30% o en 20px 20px 30px */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-template-rows: repeat(3, 1fr);  */
+    /* grid-gap: 10px; */
+    /* grid-auto-rows: minmax(50px, auto); */
+    grid-auto-rows: 200px;
+    
+}
+
+
+
+/* linea orinzotal        exemplo 
+.box-1{
+    grid-row: 1/3;
+}
+
+.box-4{
+    grid-row: 2/4;
+} */
+
+
+/*
+              exemplo 
+.box-1{
+   grid-column: 1/4;
+}
+
+ .box-2{
+    grid-column: 1/3;
+}
+
+.box-4 {
+    grid-column: 1/4;
+} */
